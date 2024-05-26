@@ -58,7 +58,7 @@ impl Board {
             } else {
                 self.beaten_white_pieces.push(p);
             }
-            if p.variant.type_id() == PieceVariant::King.type_id() {
+            if p.variant == PieceVariant::King {
                 return Err(());
             }
         }

@@ -20,7 +20,7 @@ impl Display for Color {
     }
 }
 
-#[derive(Copy, Clone)]
+#[derive(Copy, Clone, PartialEq)]
 pub enum PieceVariant {
     Pawn = 0x2659,
     Knight = 0x2658,
